@@ -52,7 +52,7 @@ const createInterview = mutation({
         startTime: v.number(),
         status: v.string(),
         streamCallId: v.string(),
-        interviewerId: v.array(v.string()),
+        interviewerIds: v.array(v.string()),
         candidateId: v.string()
     },
     handler: async (ctx, args) => {
@@ -67,7 +67,7 @@ const createInterview = mutation({
             startTime: args.startTime,
             status: args.status,
             streamCallId: args.streamCallId,
-            interviewerId: args.interviewerId,
+            interviewerIds: args.interviewerIds,
             candidateId: args.candidateId
         })
     }

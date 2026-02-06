@@ -26,6 +26,7 @@ export const TIME_SLOTS = [
   "16:00",
   "16:30",
   "17:00",
+  "23:00"
 ];
 
 export const QUICK_ACTIONS = [
@@ -79,7 +80,6 @@ export const CODING_QUESTIONS: CodeQuestion[] = [
     starterCode: {
       javascript: `function twoSum(nums, target) {
   // Write your solution here
-  
 }`,
       python: `def two_sum(nums, target):
     # Write your solution here

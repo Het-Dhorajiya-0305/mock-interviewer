@@ -8,12 +8,11 @@ const useMeetingAction=()=>{
 
      const client=useStreamVideoClient();
 
-     const createMeeting = async () => {
+     const createMeeting = async (id:string) => {
         if(!client)
             return
 
         try {
-            const id = crypto.randomUUID();
             const call = client.call("default", id)
 
             await call.getOrCreate({

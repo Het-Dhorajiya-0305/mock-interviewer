@@ -5,6 +5,8 @@ import React, { useState } from 'react'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from './ui/resizable'
 import { Button } from './ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
+import EndCallBtn from './EndCallBtn' 
+import CodeEditor from './CodeEditor'
 
 function MeetingRoom() {
 
@@ -71,7 +73,7 @@ function MeetingRoom() {
                     <UsersIcon className="size-4" />
                   </Button>
 
-                  {/* <EndCallButton /> */}
+                  <EndCallBtn />
                 </div>
               </div>
             </div>
@@ -80,7 +82,7 @@ function MeetingRoom() {
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel defaultSize={65} minSize={25}>
-          <h1>code editor will go here</h1>
+          <CodeEditor/>
         </ResizablePanel>
 
       </ResizablePanelGroup>

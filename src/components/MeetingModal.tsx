@@ -20,7 +20,8 @@ function MeetingModal({ title, isOpen, onClose, isJoinMeeting }: { title: string
             }
         }
         else {
-            createMeeting()
+            const id=crypto.randomUUID()
+            createMeeting(id);
         }
 
         setMeetingUrl("")
